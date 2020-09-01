@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    val listFood = arrayListOf<String>("Hamburger", "Pizza", "Mexican", "American", "Chinese")
+    private val listFood = arrayListOf<String>("Hamburger", "Pizza", "Mexican", "American", "Chinese")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnAddFood.setOnClickListener {
-            var newFood: Editable? = etAddFood.text
-            etAddFood.text.clear()
+            val newFood: Editable? = etAddFood.text
+            Toast.makeText(this, " ${newFood}have added", Toast.LENGTH_SHORT).show()
             listFood.add(newFood.toString())
-            Toast.makeText(this, "Successful Add New", Toast.LENGTH_SHORT).show()
+            etAddFood.text.clear()
         }
 
     }
