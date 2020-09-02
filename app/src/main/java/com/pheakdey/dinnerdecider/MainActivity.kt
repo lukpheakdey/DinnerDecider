@@ -3,9 +3,7 @@ package com.pheakdey.dinnerdecider
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
-import android.view.View
 import android.widget.Toast
-import com.smartherd.dinnerdecider.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

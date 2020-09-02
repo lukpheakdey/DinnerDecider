@@ -1,4 +1,4 @@
-package com.smartherd.dinnerdecider
+package com.pheakdey.dinnerdecider
 
 import org.junit.Test
 
