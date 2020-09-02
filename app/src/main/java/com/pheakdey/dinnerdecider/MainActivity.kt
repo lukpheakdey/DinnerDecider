@@ -1,10 +1,11 @@
-package com.smartherd.dinnerdecider
+package com.pheakdey.dinnerdecider
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.view.View
 import android.widget.Toast
+import com.smartherd.dinnerdecider.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         btnAddFood.setOnClickListener {
             val newFood: Editable? = etAddFood.text
-            Toast.makeText(this, " ${newFood}have added", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, " ${newFood} have added", Toast.LENGTH_SHORT).show()
             listFood.add(newFood.toString())
             etAddFood.text.clear()
         }
